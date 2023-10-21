@@ -22,5 +22,9 @@ fn main() {
     /* // wont compile bc of mut keyword, has to be let and then shadowed to change data type
     let mut spaces2 = "   ";
     spaces2 = spaces2.len();
+    //this will compile with two warnings about not needing mut keyword
+    let mut spaces3 = "   ";
+    let spaces3 = spaces3.len();
+    println!("The number of spaces is: {spaces3}");
     */
 }
